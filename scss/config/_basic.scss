@@ -7,4 +7,14 @@
 html {
     font-family: $font-family-default;
     font-size: $font-size-default;
+    color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.attribution {
+    color: $color-neutral-dark-blue;
+    text-align: center;
 }

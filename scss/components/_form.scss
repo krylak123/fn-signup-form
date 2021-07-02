@@ -1,0 +1,59 @@
+.form {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 .5em 0 0 hsla(249, 10%, 26%, 0.205);
+
+    &__input {
+        padding: 12px;
+        font-family: $font-family-default;
+        font-size: 1.1rem;
+        outline: none;
+        border: 1px solid $color-neutral-grayish-blue;
+        border-radius: 5px;
+
+        &:focus {
+            border: 1px solid $color-neutral-dark-blue;
+        }
+
+        &--btn {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            background-color: $color-primary-green;
+            color: white;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($color-primary-green, 10%);
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 15px;
+        }
+    }
+
+    &__error {
+        text-align: right;
+        color: $color-primary-red;
+        font-style: italic;
+        font-size: .8em;
+        visibility: hidden;
+
+        &.active {
+            visibility: visible;
+        }
+    }
+
+    &__paragraph {
+        text-align: center;
+        color: $color-neutral-dark-blue;
+        font-size: .8em;
+
+        &--red {
+            color: $color-primary-red;
+        }
+    }
+}
