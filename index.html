@@ -14,19 +14,32 @@
 
 <body>
   <section class="intro">
-    <h1 class="intro__title">Learn to code by watching others</h1>
-    <p class="intro__paragraph">See how experienced developers solve problems in real-time. Watching scripted tutorials
-      is great, but understanding how developers think is invalueable.</p>
-    <button class="intro__btn"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</button>
-    <form class="intro__form form">
-      <input type="text" class="form__input" placeholder="First Name">
-      <input type="text" class="form__input" placeholder="Last Name">
-      <input type="text" class="form__input" placeholder="Email Address">
-      <input type="password" class="form__input" placeholder="Password">
-      <input type="button" class="form__btn" value="claim your free trial">
-      <p class="form__paragraph">By clicking the button, you are agreeing to our
-        <span class="bold form__paragraph">Terms and Services</span></p>
-    </form>
+    <div class="intro__info-wrap">
+      <h1 class="intro__title">Learn to code by watching others</h1>
+      <p class="intro__paragraph">See how experienced developers solve problems in real-time. Watching scripted
+        tutorials
+        is great, but understanding how developers think is invalueable.</p>
+    </div>
+    <div class="intro__form-wrap">
+      <button class="intro__btn"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</button>
+      <form class="intro__form form">
+        <input type="text" class="form__input" placeholder="First Name">
+        <label class="form__error form__error--first">First Name cannotbe empty</label>
+
+        <input type="text" class="form__input" placeholder="Last Name">
+        <label class="form__error form__error--last">Last Name cannotbe empty</label>
+
+        <input type="email" class="form__input" placeholder="Email Address">
+        <label class="form__error form__error--email">Looks like this not an email</label>
+
+        <input type="password" class="form__input" placeholder="Password">
+        <label class="form__error form__error--password">Password cannotbe empty</label>
+
+        <input type="submit" class="form__input form__input--btn" value="claim your free trial">
+        <p class="form__paragraph">By clicking the button, you are agreeing to our
+          <span class="bold form__paragraph--red">Terms and Services</span></p>
+      </form>
+    </div>
   </section>
   <footer>
     <p class="attribution">
