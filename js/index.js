@@ -92,38 +92,38 @@ class FormValidation {
 
     validationIncorrect(result) {
         if (!result.correctFirstName) {
-            this.inputFirstName.classList.add('incorrect');
-            document.querySelector('.form__error--first').classList.add('active');
+            document.querySelector('.form__input-wrap--first-name').classList.add('incorrect');
+            document.querySelector('.form__error--first').classList.add('incorrect');
         }
 
         if (!result.correctLastName) {
-            this.inputLastName.classList.add('incorrect');
-            document.querySelector('.form__error--last').classList.add('active');
+            document.querySelector('.form__input-wrap--last-name').classList.add('incorrect');
+            document.querySelector('.form__error--last').classList.add('incorrect');
         }
 
         if (!result.correctEmail) {
-            this.inputEmail.classList.add('incorrect');
-            document.querySelector('.form__error--email').classList.add('active');
+            document.querySelector('.form__input-wrap--email').classList.add('incorrect');
+            document.querySelector('.form__error--email').classList.add('incorrect');
         }
 
         if (!result.correctPassword) {
-            this.inputPassword.classList.add('incorrect');
-            document.querySelector('.form__error--password').classList.add('active');
+            document.querySelector('.form__input-wrap--password').classList.add('incorrect');
+            document.querySelector('.form__error--password').classList.add('incorrect');
         }
     }
 
     resetValidationIncorrect() {
-        this.inputFirstName.classList.remove('incorrect');
-        document.querySelector('.form__error--first').classList.remove('active');
+        document.querySelector('.form__input-wrap--first-name').classList.remove('incorrect');
+        document.querySelector('.form__error--first').classList.remove('incorrect');
 
-        this.inputLastName.classList.remove('incorrect');
-        document.querySelector('.form__error--last').classList.remove('active');
+        document.querySelector('.form__input-wrap--last-name').classList.remove('incorrect');
+        document.querySelector('.form__error--last').classList.remove('incorrect');
 
-        this.inputEmail.classList.remove('incorrect');
-        document.querySelector('.form__error--email').classList.remove('active');
+        document.querySelector('.form__input-wrap--email').classList.remove('incorrect');
+        document.querySelector('.form__error--email').classList.remove('incorrect');
 
-        this.inputPassword.classList.remove('incorrect');
-        document.querySelector('.form__error--password').classList.remove('active');
+        document.querySelector('.form__input-wrap--password').classList.remove('incorrect');
+        document.querySelector('.form__error--password').classList.remove('incorrect');
     }
 
     start() {

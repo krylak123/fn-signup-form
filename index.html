@@ -23,17 +23,29 @@
     <div class="intro__form-wrap">
       <p class="intro__info"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</p>
       <form class="intro__form form" novalidate>
-        <input type="text" class="form__input" id="firstName" placeholder="First Name">
+        <div class="form__input-wrap form__input-wrap--first-name">
+          <input type="text" class="form__input" id="firstName" placeholder="First Name">
+          <img class="form__input-icon" src="./images/icon-error.svg" alt="error-icon">
+        </div>
         <label for="firstName" class="form__error form__error--first">First Name cannot be empty</label>
 
-        <input type="text" class="form__input" id="lastName" placeholder="Last Name">
+        <div class="form__input-wrap form__input-wrap--last-name">
+          <input type="text" class="form__input" id="lastName" placeholder="Last Name">
+          <img class="form__input-icon" src="./images/icon-error.svg" alt="error-icon">
+        </div>
         <label for="lastName" class="form__error form__error--last">Last Name cannot be empty</label>
 
-        <input type="email" class="form__input" id="email" placeholder="Email Address">
+        <div class="form__input-wrap form__input-wrap--email">
+          <input type="email" class="form__input" id="email" placeholder="Email Address">
+          <img class="form__input-icon" src="./images/icon-error.svg" alt="error-icon">
+        </div>
         <label for="email" class="form__error form__error--email">Looks like this not an email</label>
 
-        <input type="password" class="form__input" id="password" placeholder="Password">
-        <label for="password" class="form__error form__error--password">Password cannot be shorter then 6 char</label>
+        <div class="form__input-wrap form__input-wrap--password">
+          <input type="password" class="form__input" id="password" placeholder="Password">
+          <img class="form__input-icon" src="./images/icon-error.svg" alt="error-icon">
+        </div>
+        <label for="password" class="form__error form__error--password">Password cannot be shorter than 6 chars</label>
 
         <input type="submit" class="form__input form__input--btn" value="claim your free trial">
 

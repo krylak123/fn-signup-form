@@ -6,8 +6,18 @@
     border-radius: 10px;
     box-shadow: 0 .5em 0 0 hsla(249, 10%, 26%, 0.205);
 
+    &__input-wrap {
+        position: relative;
+
+        @media screen and (min-width: 1440px) {
+            margin-top: 15px;
+        }
+    }
+
     &__input {
+        margin-top: 10px;
         padding: 12px;
+        width: 100%;
         font-family: $font-family-default;
         font-size: 1.1rem;
         outline: none;
@@ -19,7 +29,7 @@
         }
 
         &--btn {
-            margin-bottom: 15px;
+            margin: 10px 0 15px 0;
             text-transform: uppercase;
             background-color: $color-primary-green;
             color: white;
@@ -29,10 +39,14 @@
                 background-color: lighten($color-primary-green, 10%);
             }
         }
+    }
 
-        @media screen and (min-width: 1440px) {
-            margin-top: 15px;
-        }
+    &__input-icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, calc(-50% + 10px / 2));
+        visibility: hidden;
     }
 
     &__error {
@@ -42,7 +56,7 @@
         font-size: .8em;
         visibility: hidden;
 
-        &.active {
+        &.incorrect {
             visibility: visible;
         }
     }
@@ -64,5 +78,11 @@
 }
 
 .incorrect {
-    box-shadow: 0 0 5px 0 $color-primary-red;
+    & .form__input {
+        box-shadow: 0 0 5px 0 $color-primary-red;
+    }
+
+    & .form__input-icon {
+        visibility: visible;
+    }
 }
