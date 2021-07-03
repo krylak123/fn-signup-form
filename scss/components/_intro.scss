@@ -42,11 +42,12 @@
         }
     }
 
-    &__btn {
+    &__info {
         display: block;
         margin-bottom: 20px;
         padding: 20px 50px;
         width: 100%;
+        text-align: center;
         font-family: $font-family-default;
         color: white;
         outline: none;

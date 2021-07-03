@@ -58,3 +58,11 @@
         text-decoration: none;
     }
 }
+
+.correct {
+    box-shadow: 0 0 5px 0 $color-primary-green;
+}
+
+.incorrect {
+    box-shadow: 0 0 5px 0 $color-primary-red;
+}
