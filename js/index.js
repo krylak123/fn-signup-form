@@ -39,6 +39,8 @@ class FormValidation {
         let correctPassword = false;
         let correctForm = false;
 
+        const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
         if (firstName.length > 0 && firstName.indexOf(' ') === -1) {
             correctFirstName = true;
         }
@@ -47,7 +49,7 @@ class FormValidation {
             correctLastName = true;
         }
 
-        if (email.indexOf('@') !== -1 && email.indexOf('.') !== -1) {
+        if (re.test(email)) {
             correctEmail = true;
         }
 
