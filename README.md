@@ -14,4 +14,4 @@ Users should be able to:
 
 ### Screenshot
 
-![](images/README.png)
+![](images/README.PNG)
